@@ -1,6 +1,8 @@
 # MMM-NHL
 National Hockey League Module for MagicMirror<sup>2</sup>
 
+Started as a clone of https://github.com/fewieden/MMM-NFL with lots of modifications for NHL stats/schedule
+
 ## Example
 
 ![](.github/example.jpg)
