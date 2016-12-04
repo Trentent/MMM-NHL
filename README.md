@@ -29,7 +29,7 @@ National Hockey League Module for MagicMirror<sup>2</sup>
 ## Config Options
 | **Option** | **Default** | **Description** |
 | --- | --- | --- |
-| `colored` | `false` | Remove black/white filter of logos/helmets. |
+| `colored` | `false` | Remove black/white filter of logos. |
 | `focus_on` | `false` | Display only matches with teams of this array e.g. 'NOT TESTED' |
 | `format` | `'ddd h:mm'` | In which format the date should be displayed. [All Options](http://momentjs.com/docs/#/displaying/format/) |
 | `reloadInterval` | `1800000` (30 mins) | How often should the data be fetched |
