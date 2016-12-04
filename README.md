@@ -1,7 +1,9 @@
 # MMM-NHL
 National Hockey League Module for MagicMirror<sup>2</sup>
 
-Started as a clone of https://github.com/fewieden/MMM-NFL with lots of modifications for NHL stats/schedule
+Started as a clone of https://github.com/fewieden/MMM-NFL with lots of modifications for NHL stats/schedule.
+
+This module will give near-realtime updates during of the scores of currently running games.  It will show the previous days game, today's games and a set number of days that you specify (default is 1).
 
 ## Example
 
@@ -35,4 +37,4 @@ Started as a clone of https://github.com/fewieden/MMM-NFL with lots of modificat
 | `focus_on` | `false` | Display only matches with teams of this array e.g. 'NOT TESTED' |
 | `format` | `'ddd h:mm'` | In which format the date should be displayed. [All Options](http://momentjs.com/docs/#/displaying/format/) |
 | `reloadInterval` | `1800000` (30 mins) | How often should the data be fetched |
-
+| `datesToLookAhead` | `1` (1 day) | How far in advance the schedule should be pulled |
