@@ -16,8 +16,10 @@ This module will give near-realtime updates during of the scores of currently ru
   * [moment-timezone](https://www.npmjs.com/package/moment-timezone)
 
 ## Installation
- 1. Clone this repo into `~/MagicMirror/modules` directory.
- 2. Configure your `~/MagicMirror/config/config.js`:
+ 1. Change directory to `~/MagicMirror/modules`.
+ 2. Run this command : git clone https://github.com/trentent/MMM-NHL.git
+ 3. Run command `npm install` in `~/MagicMirror/modules/MMM-NHL` directory.
+ 4. Configure your `~/MagicMirror/config/config.js`:
 
     ```
     {
@@ -28,7 +30,7 @@ This module will give near-realtime updates during of the scores of currently ru
         }
     }
     ```
- 3. Run command `npm install` in `~/MagicMirror/modules/MMM-NHL` directory.
+
 
 ## Config Options
 | **Option** | **Default** | **Description** |
