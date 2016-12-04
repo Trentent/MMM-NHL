@@ -1,2 +1,36 @@
 # MMM-NHL
-National Hockey League scores and schedule module for MagicMirror
+National Hockey League Module for MagicMirror<sup>2</sup>
+
+## Example
+
+![](.github/example.jpg)   ![](.github/example2.jpg)   ![](.github/example_focus.jpg)   ![](.github/example_statistic.jpg)   ![](.github/example_help.jpg)   ![](.github/example_bye_week.png)
+
+## Dependencies
+  * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
+  * npm
+  * [request](https://www.npmjs.com/package/request)
+  * [moment-timezone](https://www.npmjs.com/package/moment-timezone)
+
+## Installation
+ 1. Clone this repo into `~/MagicMirror/modules` directory.
+ 2. Configure your `~/MagicMirror/config/config.js`:
+
+    ```
+    {
+        module: 'MMM-NHL',
+        position: 'top_right',
+        config: {
+            ...
+        }
+    }
+    ```
+ 3. Run command `npm install` in `~/MagicMirror/modules/MMM-NHL` directory.
+
+## Config Options
+| **Option** | **Default** | **Description** |
+| --- | --- | --- |
+| `colored` | `false` | Remove black/white filter of logos/helmets. |
+| `focus_on` | `false` | Display only matches with teams of this array e.g. 'NOT TESTED' |
+| `format` | `'ddd h:mm'` | In which format the date should be displayed. [All Options](http://momentjs.com/docs/#/displaying/format/) |
+| `reloadInterval` | `1800000` (30 mins) | How often should the data be fetched |
+
