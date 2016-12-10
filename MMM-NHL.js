@@ -26,12 +26,12 @@ Module.register("MMM-NHL", {
         "5": "OVERTIME",
         "6": "SHOOTOUT",
         "7": "FINAL",
-        // 1 - 
+        // 1 -
         // 2 - Pre-Game
         // 3 - Live - In Progress
         // 4 - Live - In Progress Critical
-        // 5 - 
-        // 6 - 
+        // 5 -
+        // 6 -
         // 7 - Final
 
         //detailed states:
@@ -52,16 +52,16 @@ Module.register("MMM-NHL", {
         "5" : "PIT",
         "6" : "BOS",
         "7" : "BUF",
-        "8" : "MON",
+        "8" : "MTL",
         "9" : "OTT",
         "10" : "TOR",
         "12" : "CAR",
-        "13" : "FLO",
+        "13" : "FLA",
         "14" : "TBL",
-        "15" : "WAS",
+        "15" : "WSH",
         "16" : "CHI",
         "17" : "DET",
-        "18" : "NAS",
+        "18" : "NSH",
         "19" : "STL",
         "20" : "CGY",
         "21" : "COL",
@@ -71,10 +71,11 @@ Module.register("MMM-NHL", {
         "25" : "DAL",
         "26" : "LAK",
         "28" : "SJS",
-        "29" : "CLB",
+        "29" : "CBJ",
         "30" : "MIN",
         "52" : "WPG",
         "53" : "ARI",
+        "54" : "VGK"
     },
 
 
@@ -88,7 +89,7 @@ Module.register("MMM-NHL", {
         reloadInterval: 30 * 60 * 1000       // every 30 minutes
     },
 
-    
+
 
     getScripts: function() {
         return ["moment.js"];
@@ -119,7 +120,7 @@ Module.register("MMM-NHL", {
         var scores = document.createElement("div");
         var header = document.createElement("header");
         //console.log ("yoyoyo" + JSON.stringify(this.scores[1].games[0].gameType));
-        
+
 
         if (!this.scores) {
             var text = document.createElement("div");
@@ -133,7 +134,7 @@ Module.register("MMM-NHL", {
             table.classList.add("small", "table");
 
             table.appendChild(this.createLabelRow());
-        
+
             //count the number of games.  To do we'll get the number of games for each day and add them together
             var allGames = [];
             for (var i = 0; i < this.scores.length; i++) {
@@ -227,7 +228,7 @@ Module.register("MMM-NHL", {
             homeLogo.style.height = '50px';
             homeLogo.style.width = '50px';
             var homeIcon = document.createElement("img");
-            homeIcon.src = this.file("2016icons/" + data.teams.home.team.id + ".svg");
+            homeIcon.src = this.file("logos/" + data.teams.home.team.id + ".svg");
             if (!this.config.colored) {
                 homeIcon.classList.add("icon");
             }
@@ -250,7 +251,7 @@ Module.register("MMM-NHL", {
             var awayIcon = document.createElement("img");
             awayLogo.style.height = '50px';
             awayLogo.style.width = '50px';
-            awayIcon.src = this.file("2016icons/" + data.teams.away.team.id + ".svg");
+            awayIcon.src = this.file("logos/" + data.teams.away.team.id + ".svg");
             if (!this.config.colored) {
                 awayIcon.classList.add("icon");
             }

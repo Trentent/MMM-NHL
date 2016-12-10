@@ -7,7 +7,7 @@ This module will give near-realtime updates during of the scores of currently ru
 
 ## Example
 
-![](.github/example.jpg)
+![](.github/example.png)
 
 ## Dependencies
   * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
@@ -40,3 +40,7 @@ This module will give near-realtime updates during of the scores of currently ru
 | `format` | `'ddd h:mm'` | In which format the date should be displayed. [All Options](http://momentjs.com/docs/#/displaying/format/) |
 | `reloadInterval` | `1800000` (30 mins) | How often should the data be fetched |
 | `datesToLookAhead` | `1` (1 day) | How far in advance the schedule should be pulled |
+
+### Legal Information
+  * Official NHL information from [Michael Sharer](https://github.com/epitaphmike) of the NHL.
+  * All NHL logos and marks and NHL team logos and marks depicted herein are the property of the NHL and the respective teams and may not be reproduced without the prior written consent of NHL Enterprises, L.P. © NHL 2016.
