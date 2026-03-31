@@ -30,6 +30,13 @@ National Hockey League Module for MagicMirror²
 }
 ```
 
+For Docker container installs:
+```
+git clone https://github.com/Trentent/MMM-NHL.git
+cd MMM-NHL
+npm install
+```
+
 * Run command `npm i --production` in `~/MagicMirror/modules/MMM-NHL` directory.
 
 ## Config Options
