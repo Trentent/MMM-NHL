@@ -17,7 +17,7 @@
         </thead>
         <tbody>
             {% for index in range(rotateIndex, maxGames) %}
-                <tr>
+                <tr class="{{ 'focus-game' if games[index].isFocusGame else '' }}">
                     <td>
                         {% if games[index].status === "PRE" %}
                             {{ "PRE_GAME" | translate }}
