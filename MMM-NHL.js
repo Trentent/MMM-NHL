@@ -40,17 +40,20 @@ Module.register('MMM-NHL', {
      * @member {object.<string, string>} states - Maps game state short codes to translation keys.
      */
     states: {
-        '1st': '1ST_PERIOD',
-        '2nd': '2ND_PERIOD',
-        '3rd': '3RD_PERIOD',
-        OT: 'OVER_TIME',
-        SO: 'SHOOTOUT',
-        SHOOTOUT: 'SHOOTOUT',
-        FINAL: 'FINAL',
-        'FINAL OT': 'FINAL_OVERTIME',
-        'FINAL SO': 'FINAL_SHOOTOUT',
-        PPD: 'PPD'
-    },
+    // Live game states - map to period string from live.period
+    'LIVE': 'LIVE',
+    'CRIT': 'LIVE',
+    // Finished games
+    'OFF': 'FINAL',
+    // Future/scheduled games - no status label needed
+    'FUT': 'FUT',
+    'PRE': 'PRE',
+    // Keep old ones in case they appear anywhere
+    'FINAL': 'FINAL',
+    'FINAL OT': 'FINAL_OVERTIME',
+    'FINAL SO': 'FINAL_SHOOTOUT',
+    PPD: 'PPD'
+},
 
     /**
      * @member {boolean} loading - Indicates loading state of module and data.

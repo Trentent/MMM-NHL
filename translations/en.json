@@ -1,0 +1,13 @@
+{
+  "LOADING": "Loading...",
+  "HOME": "Home",
+  "AWAY": "Away",
+  "PRE_GAME": "Pre-game",
+  "POSTPONED": "Postponed",
+  "TIME_LEFT": "{TIME}",
+  "FINAL": "Final",
+  "FINAL_REG": "Final",
+  "FINAL_OT": "Final/OT",
+  "FINAL_SO": "Final/SO",
+  "SERIES": "Series"
+}
